@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-title {
+  font-size: 4em;
+  background-color: rgb(2, 68, 19);
+  color: rgb(188, 212, 188);
+  text-align: center;
+  padding: 25px 0px;
+  margin-bottom: 25px;
+  text-decoration: underline;
+}
+
+main {
+  background-color: #e1e7df;
+  width: 600px;
+  padding: 20px;
+  border: solid rgb(157, 195, 162) 5px;
+  margin: auto;
+}
+
+.sub-title {
+  font-size: 3em;
+  color: rgb(91, 205, 50);
+  margin-bottom: 10px;
+}
+
+.img {
+  width: 100%;
+}
+
+.sub-sub-titles {
+  color: rgb(52, 100, 52);
+  font-size: 2em;
+  margin: 0px 0px;
+}
+
+.para {
+  font-size: 1.5em;
+}
+
+.quots {
+  font-size: 1.5em;
+  text-align: center;
+  background-color: #24803e;
+  color: rgb(189, 204, 195);
+  padding: 25px 0;
+  margin-top: 25px;
+}
