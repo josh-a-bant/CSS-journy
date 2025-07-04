@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.5em;
+  background-color: blue;
+  color: white;
+}
+
+p:first-child {
+  font-size: 2em;
+  background-color: yellowgreen;
+  color: red;
+}
