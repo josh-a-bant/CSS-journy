@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex | CSS</title>
+
+    <style>
+      :root {
+        --main-colour: #4df8fb8c;
+        --text-colour: rgba(30, 30, 179, 0.766);
+      }
+      .flex-container {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-color: var(--main-colour);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      li {
+        list-style: none;
+        /* margin: auto; */
+        font-size: 1.5em;
+        font-weight: bold;
+        color: var(--text-colour);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul class="flex-container">
+        <li class="items">Home</li>
+        <li class="items">Services</li>
+        <li class="items">Contact</li>
+        <li class="items">AboutMe</li>
+        <li class="items">Test</li>
+      </ul>
+    </nav>
+  </body>
+</html>
