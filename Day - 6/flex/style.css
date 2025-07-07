@@ -1,0 +1,28 @@
+.flex-container {
+  border: 2px solid black;
+  display: flex;
+  /* gap: 1vw; */
+  /* flex-wrap: wrap; */
+  flex-direction: column-reverse;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.flex-items {
+  border: 2px solid grey;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#item-1 {
+  /* flex-grow: 2; */
+}
+
+#item-4 {
+  /* flex-grow: 4; */
+}
