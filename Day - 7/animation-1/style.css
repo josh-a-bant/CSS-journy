@@ -1,0 +1,36 @@
+.outer-box {
+  background-color: red;
+  height: 60vh;
+  width: 60vw;
+  display: flex;
+  align-items: flex-end;
+}
+
+.outer-box .ball {
+  background-color: purple;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.ball {
+  animation: x-axis 3s linear infinite, y-axis 1s ease-out alternate infinite;
+}
+
+@keyframes x-axis {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(53vw);
+  }
+}
+
+@keyframes y-axis {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-45vh);
+  }
+}

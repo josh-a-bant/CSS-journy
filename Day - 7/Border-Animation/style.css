@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 50vw;
+  border: 2px solid;
+  text-align: center;
+
+  animation: border-glow 2s ease-in-out infinite forwards;
+}
+
+@keyframes border-glow {
+  0% {
+    box-shadow: 0 0 20px aqua;
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
