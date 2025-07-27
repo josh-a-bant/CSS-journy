@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid | Layout - 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 4fr 1fr;
+        row-gap: 1rem;
+      }
+      .header {
+        background-color: rgba(240, 128, 128, 0.467);
+      }
+      .main-content {
+        background-color: rgba(144, 238, 144, 0.426);
+      }
+      .footer {
+        background-color: rgba(32, 178, 171, 0.303);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"></div>
+      <div class="main-content"></div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
