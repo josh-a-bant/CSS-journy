@@ -64,6 +64,7 @@ body {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+  /* border: 1px solid; */
 }
 
 h1,
@@ -141,6 +142,8 @@ span {
   color: var(--white);
   background-color: var(--primary-shade);
   border: 2px solid var(--primary-shade);
+  transform: scale(1.05, 1.05);
+  box-shadow: 0px 0px 6px var(--grey-base);
 }
 
 .btn-primary-outline:link,
@@ -155,6 +158,8 @@ span {
   border: 2px solid #1c7ed6;
   background-color: var(--white);
   color: var(--primary-shade);
+  transform: scale(1.05, 1.05);
+  box-shadow: 0px 0px 6px;
 }
 
 .btn-secondary:link,
@@ -169,6 +174,8 @@ span {
   color: var(--white);
   background-color: var(--secondary-shade);
   border: 2px solid var(--secondary-shade);
+  transform: scale(1.05, 1.05);
+  box-shadow: 0px 0px 6px var(--grey-base);
 }
 
 .highlight {
@@ -217,8 +224,25 @@ span {
   text-align: center;
 }
 
+.beta {
+  position: relative;
+}
+
+.beta::after {
+  content: "beta";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--tertiary-base);
+  border-radius: 0.5rem;
+  padding: 2px 4px;
+  transform: translate(100%, -50%);
+  color: var(--white);
+}
+
 .hero-para {
   margin-bottom: 5rem;
+  text-align: center;
 }
 
 .hero-btns {
@@ -298,4 +322,21 @@ span {
 
 .social-icons {
   width: 20px;
+}
+
+.chat-container {
+  background-color: var(--primary-tint);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.chat-icon {
+  height: 5rem;
+  width: 5rem;
 }
